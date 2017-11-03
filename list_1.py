@@ -1,3 +1,5 @@
+#列表中的递归迭代
+
 def print_lol(the_list):
     for each_item in the_list:
         if isinstance(each_item, list):
