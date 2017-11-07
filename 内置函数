@@ -1,0 +1,7 @@
+# 1、内置函数min\max
+def max_min(the_list):
+	min_value = min(the_list)
+	max_value = max(the_list)
+	print(min_value, max_value)
+if __name__  == __main__:
+  max_min([4,2,76,35,28,45])
