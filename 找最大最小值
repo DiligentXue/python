@@ -1,0 +1,23 @@
+#找出最大值、最小值 
+#1、内置函数min\max
+def max_min(the_list):
+	min_value = min(the_list)
+	max_value = max(the_list)
+	print(min_value, max_value)
+if __name__  == __main__:
+  max_min([4,2,76,35,28,45])
+
+#自定义判断最大最小
+def max_min(the_list):
+	for i in the_list:
+		if the_list.index(i) == 0:
+			min_value = i
+			max_value = i
+		for j in the_list:
+			if j > max_value:
+				max_value = j
+			if i < min_value:
+				min_value =i
+	print(min_value, max_value)
+if __name__ == __main__:
+	max_min([[4,2,76,35,28,45]])
