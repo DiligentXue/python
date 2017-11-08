@@ -12,7 +12,9 @@ try:
     for each_line in data:
         try:
             """
-            将文件以冒号分为:冒号前，冒号后  。
+            对文件内容以冒号为标志进行切分，str.split(str='', num=string.count(str)) ，
+            str --- 分隔符，默认为所有的空字符，包括空格、换行、制表符等
+            num --- 分割次数
             根据冒号前的关键字进行匹配，将文件内容分离存入两个列表中
             """
             (role, line_spoken) = each_line.split(":", 1)
