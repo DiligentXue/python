@@ -10,6 +10,6 @@ def sort_list(the_list, sort_reversed=False):
                  the_list[i], the_list[j] = the_list[j], the_list[i]
           
    print(the_list)
-   
- if __name__ == '__main__':
-     sort_list([3, 2, 4, 8, 1], sort_reversed=True)
+
+if __name__ == '__main__':
+   sort_list([3, 2, 4, 8, 1], sort_reversed=True)
